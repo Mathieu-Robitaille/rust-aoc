@@ -25,7 +25,7 @@ lazy_static! {
 }
 
 #[aoc_generator(day2)]
-fn parse_input_day1(input: &str) -> Vec<Password> {
+fn parse_input_day2(input: &str) -> Vec<Password> {
     input.lines()
         .map(|x| parse_password(x))
         .collect()
