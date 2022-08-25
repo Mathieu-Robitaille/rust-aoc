@@ -45,25 +45,25 @@ fn part_two(input: &Vec<i32>) -> i32 {
 fn test_find_2020_entries() {
     let test_vec = vec![1721, 979, 366, 299, 675, 1456];
 
-    assert_eq!(514579, find_2020_entries(&test_vec))
+    assert_eq!(514579, part_one(&test_vec))
 }
 
 #[test]
 fn test_find_2020_entries_not_self() {
     let test_vec = vec![1010];
 
-    assert_eq!(1, find_2020_entries(&test_vec))
+    assert_eq!(1, part_one(&test_vec))
 }
 
 #[test]
 fn test_find_2020_entries_double_self() {
     let test_vec = vec![1010, 1010];
 
-    assert_eq!(1020100, find_2020_entries(&test_vec))
+    assert_eq!(1020100, part_one(&test_vec))
 }
 
 #[test]
 fn test_find_2020_entries_with_three() {
     let test_vec = vec![1721, 979, 366, 299, 675, 1456];
-    assert_eq!(241861950, find_2020_entries_with_three(&test_vec))
+    assert_eq!(241861950, part_two(&test_vec))
 }
